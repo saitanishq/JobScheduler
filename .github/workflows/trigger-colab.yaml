@@ -1,0 +1,13 @@
+name: Trigger Google Colab
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # Runs at 10 AM daily (UTC)
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Google Colab Notebook
+        run: curl -X POST https://deb5-34-80-154-49.ngrok-free.app/trigger  # Replace with your ngrok URL
+
