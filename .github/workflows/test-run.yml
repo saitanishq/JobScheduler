@@ -29,7 +29,7 @@ jobs:
 
     - name: Run Jupyter Notebook
       run: |
-        jupyter nbconvert --to notebook --execute Google_Articles_Brainstorming_6.ipynb --output ./Output/executed_notebook.ipynb
+        jupyter nbconvert --to notebook --execute Google_Articles_Brainstorming_10_(Google_Colab_Files).ipynb --output ./Output/executed_notebook.ipynb
 
     - name: Upload Output notebook
       uses: actions/upload-artifact@v4
