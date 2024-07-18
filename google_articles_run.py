@@ -16,7 +16,7 @@ import random
 import requests
 from urllib.parse import urlparse # use to parse out the domain of the url links
 from datetime import datetime # use to get date and time
-from IPython.display import FileLink
+from IPython.display import FileLink, display
 
 # putting the keywords in a list of strings
 # each keyword with capitalization format so that it can later be used as search term as well as title of txt file
