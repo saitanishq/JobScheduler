@@ -28,7 +28,7 @@ jobs:
 
     - name: Run script to generate file
       run: |
-        python script.py
+        python google_articles_run.py
 
     - name: Upload file as artifact
       uses: actions/upload-artifact@v2
