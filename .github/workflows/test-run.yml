@@ -1,6 +1,8 @@
 name: Run Jupyter Notebook
 
 on:
+  schedule:
+    - cron: '0 15 * * *' # This will run daily at 10 AM EST (3 PM UTC)
   push:
     branches:
       - main
@@ -37,4 +39,3 @@ jobs:
         name: article-links
         path: |
           *.txt
-
