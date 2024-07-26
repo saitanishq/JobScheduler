@@ -166,10 +166,13 @@ def replaceFile(topic):
     url_old = [] # if the file is empty, then the current list of articles is empty
   else: # if the file is not empty, it will have a current list of articles to be read and updated
     url_old = readFile(topic) # read the current list of articles
+  print(url_old)
   url_list = addLinks(topic, url_old) # add links to the the curerent list of articles in list form
+  print(url_list)
   date = "Date: " + str(getDataAndTime()[0]) + "\n" # reformatting date by itself
   time = "Time: " + str(getDataAndTime()[1]) + "\n" # reformatting time by itself
   length = length = "Length: " + getLength(url_list) + " Articles" + "\n" # reformatting the length by itself
+  print(length)
   url_string = listToString(url_list) # change the list to string form compatible with txt file
   writeFile(topic, date, time, length, url_string) # add new contents to the files
   downloadFile(topic) # implement if want to download the files
