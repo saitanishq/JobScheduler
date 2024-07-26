@@ -72,7 +72,7 @@ def addLinks_test(keyword, url_old):
   url_new = list(g.search("women's health " + keyword, stop = 10, lang = 'en')) # search for articles, put links in a list
   domains_current = generateDomains(url_old) # make a list of the unique domains that are in the current list of links
   url_all = addDomainsAndUpdateList(url_new, url_old, domains_current) # check that links are not already in the list and have unique domains
-  random.shuffle(url_all) # shuffle the list of articles so not in any order, get more variety
+  #random.shuffle(url_all) # shuffle the list of articles so not in any order, get more variety
   return url_all
 
 def addLinks(keyword, url_old):
@@ -85,7 +85,7 @@ def addLinks(keyword, url_old):
 
     domains_current = generateDomains(url_old)  # Generate a list of unique domains
     url_all = addDomainsAndUpdateList(url_new, url_old, domains_current)  # Update the list with unique domains
-    random.shuffle(url_all)  # Shuffle the list for variety
+    #random.shuffle(url_all)  # Shuffle the list for variety
     return url_all
 
 # function to get the current date and time
